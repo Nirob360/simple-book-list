@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Andada Pro", serif;
+}
+.container {
+  .title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    .book {
+      color: #0062f5;
+    }
+  }
+
+  .book-form {
+    width: 500px;
+    // background: rgb(6, 73, 216);
+
+    margin: auto;
+    .from-group {
+      margin: 20px 10px;
+      label {
+        color: #666666;
+        font-size: 30px;
+        width: 100%;
+        display: block;
+        margin-bottom: 6px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          color: #0384ee;
+        }
+      }
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 2px solid rgb(192, 191, 191);
+        border-radius: 6px;
+        transition: 0.3s;
+        &:focus {
+          outline-color: #0384ee;
+          box-shadow: -4px 1px 22px 1px rgba(6, 136, 235, 0.75);
+          -webkit-box-shadow: -4px 1px 22px 1px rgba(6, 136, 235, 0.75);
+          -moz-box-shadow: -4px 1px 22px 1px rgba(6, 136, 235, 0.75);
+        }
+      }
+    }
+    input[type="submit"] {
+      display: block;
+      margin: auto;
+      width: 95%;
+      border-radius: 5px;
+      border: none;
+      padding: 12px;
+      background-color: #0384ee;
+      color: #ffffff;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: #0128d8;
+      }
+    }
+  }
+
+  .table-container {
+    margin-top: 15px;
+    width: 500px;
+    margin: auto;
+
+    table {
+      border: 1px solid black;
+      width: 100%;
+
+      margin-top: 20px;
+      border-collapse: collapse;
+      border-spacing: 1rem;
+      thead {
+        padding: 10px;
+        height: 40px;
+
+        border-radius: 5px;
+
+        tr {
+          border-bottom: 2px solid #969595;
+        }
+      }
+
+      tbody {
+        tr {
+          height: 50px;
+          border: 1px solid rgb(0, 164, 240);
+          text-align: center;
+          &:nth-child(even) {
+            background-color: cadetblue;
+          }
+          &:nth-child(odd) {
+            background-color: rgb(56, 248, 255);
+          }
+        }
+      }
+    }
+  }
+}

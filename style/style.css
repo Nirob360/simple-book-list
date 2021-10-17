@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Andada Pro", serif;
+}
+
+.container .title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.container .title .book {
+  color: #0062f5;
+}
+
+.container .book-form {
+  width: 500px;
+  margin: auto;
+}
+
+.container .book-form .from-group {
+  margin: 20px 10px;
+}
+
+.container .book-form .from-group label {
+  color: #666666;
+  font-size: 30px;
+  width: 100%;
+  display: block;
+  margin-bottom: 6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container .book-form .from-group label:hover {
+  color: #0384ee;
+}
+
+.container .book-form .from-group input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #c0bfbf;
+  border-radius: 6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .book-form .from-group input[type="text"]:focus {
+  outline-color: #0384ee;
+  box-shadow: -4px 1px 22px 1px rgba(6, 136, 235, 0.75);
+  -webkit-box-shadow: -4px 1px 22px 1px rgba(6, 136, 235, 0.75);
+  -moz-box-shadow: -4px 1px 22px 1px rgba(6, 136, 235, 0.75);
+}
+
+.container .book-form input[type="submit"] {
+  display: block;
+  margin: auto;
+  width: 95%;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  background-color: #0384ee;
+  color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.container .book-form input[type="submit"]:hover {
+  background-color: #0128d8;
+}
+
+.container .table-container {
+  margin-top: 15px;
+  width: 500px;
+  margin: auto;
+}
+
+.container .table-container table {
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-spacing: 1rem;
+}
+
+.container .table-container table thead {
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.container .table-container table thead tr {
+  border-bottom: 2px solid #969595;
+}
+
+.container .table-container table tbody tr {
+  height: 50px;
+  border: 1px solid #00a4f0;
+  text-align: center;
+}
+
+.container .table-container table tbody tr:nth-child(even) {
+  background-color: cadetblue;
+}
+
+.container .table-container table tbody tr:nth-child(odd) {
+  background-color: #38f8ff;
+}
+/*# sourceMappingURL=style.css.map */
